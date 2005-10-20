@@ -1,19 +1,18 @@
 Summary:	XprintUtil library
 Summary(pl):	Biblioteka XprintUtil
 Name:		xorg-lib-libXprintUtil
-Version:	0.99.0
-Release:	0.03
+Version:	0.99.1
+Release:	0.1
 License:	MIT
 Group:		X11/Libraries
-Source0:	http://xorg.freedesktop.org/X11R7.0-RC0/lib/libXprintUtil-%{version}.tar.bz2
-# Source0-md5:	cfcc8082975abc6f0d79fe746869e5e8
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/lib/libXprintUtil-%{version}.tar.bz2
+# Source0-md5:	e99ea26e181800b2b2ccce2e892f505b
 URL:		http://xorg.freedesktop.org/
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 0.19
 BuildRequires:	xorg-lib-libXp-devel
-BuildRequires:	xorg-lib-libXt-devel
 BuildRequires:	xorg-util-util-macros
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -29,7 +28,6 @@ Summary(pl):	Pliki nag³ówkowe do biblioteki libXprintUtil
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	xorg-lib-libXp-devel
-Requires:	xorg-lib-libXt-devel
 
 %description devel
 XprintUtil library.
@@ -87,6 +85,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc ChangeLog
 %attr(755,root,root) %{_libdir}/libXprintUtil.so.*.*.*
 
 %files devel
