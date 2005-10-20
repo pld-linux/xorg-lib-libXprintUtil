@@ -13,6 +13,7 @@ BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 0.19
 BuildRequires:	xorg-lib-libXp-devel
+BuildRequires:	xorg-lib-libXt-devel
 BuildRequires:	xorg-util-util-macros
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -28,6 +29,7 @@ Summary(pl):	Pliki nag³ówkowe do biblioteki libXprintUtil
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	xorg-lib-libXp-devel
+Requires:	xorg-lib-libXt-devel
 
 %description devel
 XprintUtil library.
@@ -92,6 +94,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libXprintUtil.so
 %{_libdir}/libXprintUtil.la
+%dir %{_includedir}/X11/XprintUtil
 %{_includedir}/X11/XprintUtil/*.h
 %{_pkgconfigdir}/xprintutil.pc
 
