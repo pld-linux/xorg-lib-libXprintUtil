@@ -1,5 +1,5 @@
 Summary:	XprintUtil library
-Summary(pl.UTF-8):   Biblioteka XprintUtil
+Summary(pl.UTF-8):	Biblioteka XprintUtil
 Name:		xorg-lib-libXprintUtil
 Version:	1.0.1
 Release:	3
@@ -25,7 +25,7 @@ Biblioteka XprintUtil.
 
 %package devel
 Summary:	Header files for libXprintUtil library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki libXprintUtil
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libXprintUtil
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	xorg-lib-libXp-devel
@@ -45,7 +45,7 @@ używających biblioteki libXprintUtil.
 
 %package static
 Summary:	Static libXprintUtil library
-Summary(pl.UTF-8):   Biblioteka statyczna libXprintUtil
+Summary(pl.UTF-8):	Biblioteka statyczna libXprintUtil
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
