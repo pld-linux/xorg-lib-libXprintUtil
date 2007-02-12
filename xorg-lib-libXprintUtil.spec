@@ -1,5 +1,5 @@
 Summary:	XprintUtil library
-Summary(pl):	Biblioteka XprintUtil
+Summary(pl.UTF-8):   Biblioteka XprintUtil
 Name:		xorg-lib-libXprintUtil
 Version:	1.0.1
 Release:	3
@@ -20,12 +20,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 XprintUtil library.
 
-%description -l pl
+%description -l pl.UTF-8
 Biblioteka XprintUtil.
 
 %package devel
 Summary:	Header files for libXprintUtil library
-Summary(pl):	Pliki nag³ówkowe biblioteki libXprintUtil
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe biblioteki libXprintUtil
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	xorg-lib-libXp-devel
@@ -37,15 +37,15 @@ XprintUtil library.
 This package contains the header files needed to develop programs that
 use libXprintUtil.
 
-%description devel -l pl
+%description devel -l pl.UTF-8
 Biblioteka XprintUtil.
 
-Pakiet zawiera pliki nag³ówkowe niezbêdne do kompilowania programów
-u¿ywaj±cych biblioteki libXprintUtil.
+Pakiet zawiera pliki nagÅ‚Ã³wkowe niezbÄ™dne do kompilowania programÃ³w
+uÅ¼ywajÄ…cych biblioteki libXprintUtil.
 
 %package static
 Summary:	Static libXprintUtil library
-Summary(pl):	Biblioteka statyczna libXprintUtil
+Summary(pl.UTF-8):   Biblioteka statyczna libXprintUtil
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
@@ -54,10 +54,10 @@ XprintUtil library.
 
 This package contains the static libXprintUtil library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Biblioteka XprintUtil.
 
-Pakiet zawiera statyczn± bibliotekê libXprintUtil.
+Pakiet zawiera statycznÄ… bibliotekÄ™ libXprintUtil.
 
 %prep
 %setup -q -n libXprintUtil-%{version}
