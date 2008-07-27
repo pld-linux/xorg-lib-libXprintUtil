@@ -2,7 +2,7 @@ Summary:	XprintUtil library
 Summary(pl.UTF-8):	Biblioteka XprintUtil
 Name:		xorg-lib-libXprintUtil
 Version:	1.0.1
-Release:	3
+Release:	4
 License:	MIT
 Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXprintUtil-%{version}.tar.bz2
